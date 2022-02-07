@@ -1,1 +1,1 @@
-# Java with Spark web framework
+Simple API Playground for API Training.
