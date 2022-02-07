@@ -12,6 +12,10 @@ This application is meant to be used as part of API Consumption Trainings.
 ## Environment Variables and private data
 [Glitch Docs](https://help.glitch.com/kb/article/18-adding-private-data/)
 
+## How to use it
+* Adding more endpoints: Access Main class and add the new spark routes.
+* Updating main page: Access index.html under resources and add the new navigation links.
+
 ## Credits
 This project has been inspired by there two:
 * https://github.com/craigsdennis/intro-to-apis-node
