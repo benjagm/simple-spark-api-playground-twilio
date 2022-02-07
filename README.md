@@ -11,6 +11,7 @@ This application is meant to be used as part of API Consumption Trainings.
 
 ## Environment Variables and private data
 [Glitch Docs](https://help.glitch.com/kb/article/18-adding-private-data/)
+[Windows/Linux/Mac](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html)
 
 ## How to use this project
 The main purpose of this project is to make easy to students to implement and expose apis and consume new APIs as part of the implementation of the endpoints.
