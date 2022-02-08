@@ -1,21 +1,21 @@
-# Simple Spark API Playground 
+# Simple Spark API Playground implementation using Twilio API
 
-This application is meant to be used as part of API Consumption Trainings.
+This is a implementation of Simple Spark API Playground using Twilio to send SMS and make voice calls
 
-## Use this on Glitch
+## Resources
 
-[Remix on Glitch](https://glitch.com/edit/#!/import/git?url=https://github.com/benjagra/simple-spark-api-playground)
+## Dependencies added
 
-⚠️ If cloning ends erroneously setting up a default Glitch application. If this happens to you, in the Glitch app that is created choose **Tools** >> **Extras** >> **Git Import and Export** >> **Import from GitHub** when prompted enter  `craigsdennis/intro-to-apis-node`
+## Setup
 
+## Environment Variables 
 
-## Environment Variables and private data
-[Glitch Docs](https://help.glitch.com/kb/article/18-adding-private-data/)<br>[Windows/Linux/Mac](https://www.twilio.com/blog/working-with-environment-variables-in-java)
+## Implementation
 
-## How to use this project
-The main purpose of this project is to make easy to students to implement and expose apis and consume new APIs as part of the implementation of the endpoints.
-* Adding more endpoints: Access Main class and add the new spark routes.
-* Updating main page: Access index.html under resources and add the new navigation links.
+## Fixing stuff
+Problems with SMS
+
+Problems with VOICE
 
 ## Credits
 This project has been inspired by there two:
