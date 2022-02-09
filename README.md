@@ -37,6 +37,8 @@ AUTH_TOKEN=YOUR_AUTH_TOKEN_HERE
 MY_PHONE=YOUR_PHONE_HERE
 TWILIO_PHONE=YOUR_TWILIO_PHONE_HERE
 ```
+
+Accessing the properties in your code is as easy as this:
 ```
 Dotenv dotenv = Dotenv.load();
 dotenv.get("ACCOUNT_SID")
