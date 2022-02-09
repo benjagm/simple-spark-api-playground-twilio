@@ -75,6 +75,7 @@ com.twilio.exception.ApiException: Account not authorized to call +34661709879. 
 
 And this seems that some international call destinations are by default disabled and this is the our case when trying to call from our US phone to a ES phone. To enable Spain as destination we should navigate here: https://www.twilio.com/console/voice/calls/geo-permissions/low-risk. Search for Spain in the search box, enable it and save. See image below.
 
+![Enable Spain](enable-spain.png)
 
 
 ## Credits
