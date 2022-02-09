@@ -41,6 +41,7 @@ TWILIO_PHONE=YOUR_TWILIO_PHONE_HERE
 Dotenv dotenv = Dotenv.load();
 dotenv.get("ACCOUNT_SID")
 ```
+Make sure you are not uploading your Twilio credentials to your public repositories following this guide: https://www.twilio.com/docs/usage/secure-credentials
 
 ## Implementation
 Override the endpoing available in Main Class to expose your own implementation of sending a SMS and making a Voice call and modify the html page to update the endpoints URI if that has change.
