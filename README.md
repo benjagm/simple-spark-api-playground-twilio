@@ -3,19 +3,64 @@
 This is a implementation of Simple Spark API Playground using Twilio to send SMS and make voice calls
 
 ## Resources
+* Simple Spark API Playground as base project: https://github.com/benjagra/simple-spark-api-playground
+* How to send a SMS in Java: https://www.twilio.com/docs/sms/quickstart/java
+* How to make a voice call in Java: https://www.twilio.com/docs/voice/quickstart/java
 
 ## Dependencies added
+We added below dependencies to the base project:
+```
+    <dependency>
+      <groupId>io.github.cdimascio</groupId>
+      <artifactId>java-dotenv</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.twilio.sdk</groupId>
+      <artifactId>twilio</artifactId>
+      <version>8.25.1</version>
+    </dependency>
+```
 
 ## Setup
+* Twilio sign up process: https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account#sign-up-for-your-free-twilio-trial
+* Buy a Twilio phone nomber: https://www.twilio.com/docs/usage/tutorials/how-to-use-your-free-trial-account#get-your-first-twilio-phone-number
 
 ## Environment Variables 
+For a better usage of environment variables we are including [dotenv](https://github.com/cdimascio/dotenv-java). This will imply using dotenv.get("...") instead of Java's System.getenv(...). 
+
+To configure dotenv create a .env file in the root of your project including your Twilio details:
+```
+# formatted as key=value
+ACCOUNT_SID=YOUR_ACCOUNT_SID_HERE
+AUTH_TOKEN=YOUR_AUTH_TOKEN_HERE
+MY_PHONE=YOUR_PHONE_HERE
+TWILIO_PHONE=YOUR_TWILIO_PHONE_HERE
+```
+```
+Dotenv dotenv = Dotenv.load();
+dotenv.get("ACCOUNT_SID")
+```
 
 ## Implementation
+Override the endpoing available in Main Class to expose your own implementation of sending a SMS and making a Voice call and modify the html page to update the endpoints URI if that has change.
+
+## Better Logging
 
 ## Fixing stuff
-Problems with SMS
+For a better understanding of any possible error calling Twilio API through the SDK we are catching any possible error.
+```
+      try {
+        Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
+        // Twilio actions
+      } catch (Exception  exception){
+        exception.printStackTrace();
+      }
+```
+In addition, in case of error could be helpful using [Twilio's Debug tools](https://www.twilio.com/docs/sms/debugging-tools#how-to-use-the-twilio-error-logs) available in the Console.
 
-Problems with VOICE
+**Problems with VOICE calls**
+
 
 ## Credits
 This project has been inspired by there two:
