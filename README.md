@@ -49,10 +49,10 @@ Override the endpoing available in Main Class to expose your own implementation 
 ## Better Logging
 We are including a log4j2.xml configuration file inside /src/main/resources and a Logger implementation for a cleaner logs management.
 
-´´´
+```
 public class Main {
   private static final Logger LOG = LoggerFactory.getLogger(Main.class);
-´´´
+``` 
 
 ## Fixing stuff
 For a better understanding of any possible error calling Twilio API through the SDK we are catching any possible error.
